@@ -10,9 +10,9 @@ describe 'i2d_web::core' do
     it { should be_enabled }
   end
 
-#  describe file('/var/www/html/index.html') do
-#    it { }
-#  end
+  describe file('/var/www/html/index.html') do
+    it { should contain 'Welcome to DevOpsDC' }
+  end
 
 #  describe command('curl -s http://localhost') do
 #    its(:stdout) { should_not contain('Ubuntu') }
